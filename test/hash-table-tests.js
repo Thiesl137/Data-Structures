@@ -48,7 +48,7 @@ describe('HashTable', () => {
   });
 
   // BONUS
-  xit('should double in size when 75% of the space is filled', () => {
+  it('should double in size when 75% of the space is filled', () => {
     for (let i = 0; i < 13; i++) {
       const key = 'key ' + i;
       const value = 'value ' + i;
@@ -57,7 +57,7 @@ describe('HashTable', () => {
     expect(hashTable.SIZE).to.equal(32);
   });
 
-  xit('should halve in size when less than 25% of the space is used (cannot drop below 16)', () => {
+  it('should halve in size when less than 25% of the space is used (cannot drop below 16)', () => {
     for (let i = 0; i < 13; i++) {
       const key = 'key ' + i;
       const value = 'value ' + i;
